@@ -1,0 +1,5 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { PageIntro } from '@/components/sections';
+export const metadata:Metadata={title:'关于我们',description:'STORY GRID 是一家位于中国佛山、专注 Reels 与短视频创作的工作室。',alternates:{canonical:'/zh-CN/about',languages:{en:'/en/about','zh-CN':'/zh-CN/about'}}};
+export default function ChineseAboutPage(){return <main className="inner-page"><PageIntro index="03 / 工作室" title={<>扎根佛山。<br/><em>面向未来。</em></>} copy="STORY GRID 位于中国佛山，专注 Reels 与短视频的创意策划、拍摄和剪辑，并为品牌提供相关数字支持。"/><section className="about-manifesto"><div className="seal-large" aria-hidden="true"/><div><p className="eyebrow">我们的理念</p><h2>好故事赢得关注。<br/>清晰的系统带来持续动力。</h2><p>我们先了解品牌，再构思短视频创意、拍摄方式与剪辑节奏。需要时，也可延伸到网站与营销活动，让品牌表达保持一致。</p><p>我们位于广东佛山，与希望以更清晰、更有信心的方式呈现自己的企业合作。</p></div></section><section className="principles"><div><span>01</span><h3>从好奇开始</h3><p>先理解业务与受众，再寻找视觉答案。</p></div><div><span>02</span><h3>让创作有目标</h3><p>每一帧、每一行文字与每个互动都发挥作用。</p></div><div><span>03</span><h3>保持连接</h3><p>让内容、平台与客户旅程彼此协同。</p></div></section><Link className="button button-red" href="/zh-CN/contact">聊聊合作 <span>↗</span></Link></main>;}

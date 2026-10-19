@@ -1,0 +1,6 @@
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import { ContactForm } from '@/components/contact-form';
+import { PageIntro } from '@/components/sections';
+export const metadata: Metadata = { title: 'Contact', description: 'Start a project with STORY GRID in Foshan, China.', alternates:{canonical:'/en/contact',languages:{en:'/en/contact','zh-CN':'/zh-CN/contact'}} };
+export default function ContactPage() { return <main className="inner-page contact-page"><PageIntro index="04 / START A CONVERSATION" title={<>Your next big idea<br/><em>starts here.</em></>} copy="Have a project in mind? Tell us what you're working toward. We'll get back to you to talk through the next step."/><div className="contact-layout"><div className="contact-details"><Image className="contact-brand" src="/brand/story-grid-logo-dark.png" width={1000} height={834} alt="STORY GRID — Ideas in Motion"/><p className="eyebrow">FIND US / FOSHAN, CHINA</p><a href="mailto:storygridmedia1@gmail.com">storygridmedia1@gmail.com ↗</a><a href="tel:+8613288444304">+86 132 8844 4304 ↗</a><a href="https://www.instagram.com/story_gridmedia/" target="_blank" rel="noreferrer">Instagram / @story_gridmedia ↗</a><p className="contact-address">Foshan, Guangdong, China<br/>528000</p></div><ContactForm/></div></main>; }
